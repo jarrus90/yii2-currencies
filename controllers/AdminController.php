@@ -1,6 +1,6 @@
 <?php
 
-namespace jarrus90\Currencies\Controllers;
+namespace jarrus90\Currencies\controllers;
 
 use Yii;
 use yii\helpers\Url;
