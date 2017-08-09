@@ -3,13 +3,12 @@
 namespace jarrus90\Currencies\controllers;
 
 use Yii;
-use jarrus90\Core\Web\Controllers\FrontController as Controller;
 
 /**
  * LanguageController
  * Uses for updating current system language for user
  */
-class FrontController extends Controller {
+class FrontController extends \yii\web\Controller {
 
     /**
      * Update current currency.
