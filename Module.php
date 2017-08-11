@@ -19,4 +19,15 @@ class Module extends BaseModule {
         'set/<currency:[A-Za-z0-9_-]+>' => 'front/set'
     ];
 
+    public function getAdminMenu() {
+        return [
+            'currencies' => [
+                'icon' => '<i class="fa fa-fw fa-usd"></i>',
+                'label' => Yii::t('currencies', 'Currencies'),
+                'position' => 91,
+                'visible' => Yii::$app->user->can('admin_super'),
+                'url' => '/currencies/admin/index'
+            ]
+        ];
+    }
 }
