@@ -22,7 +22,7 @@ class Module extends BaseModule {
     public function getAdminMenu() {
         return [
             'currencies' => [
-                'icon' => '<i class="fa fa-fw fa-usd"></i>',
+                'icon' => 'fa fa-fw fa-usd',
                 'label' => Yii::t('currencies', 'Currencies'),
                 'position' => 91,
                 'visible' => Yii::$app->user->can('admin_super'),
